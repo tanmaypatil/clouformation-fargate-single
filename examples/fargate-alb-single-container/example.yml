@@ -66,8 +66,8 @@ Resources:
         VpcModule: !GetAtt 'Vpc.Outputs.StackName'
         TargetModule: !GetAtt 'Target.Outputs.StackName'
         AlertingModule: !GetAtt 'Alerting.Outputs.StackName'
-        AppImage: 'widdix/hello:v1'
-        AppPort: '80'
+        AppImage: '204215401117.dkr.ecr.ap-south-1.amazonaws.com/expense_ui_app:latest'
+        AppPort: '8080'
       TemplateURL: './node_modules/@cfn-modules/fargate-service/module.yml'
 Outputs:
   Url:
